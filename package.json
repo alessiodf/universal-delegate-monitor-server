@@ -1,0 +1,12 @@
+{
+    "name": "@alessiodf/universal-delegate-monitor-server",
+    "version": "1.0.0",
+    "description": "Core plugin for use with the Universal Delegate Monitor Desktop Wallet plugin",
+    "homepage": "https://github.com/alessiodf/universal-delegate-monitor-server",
+    "main": "lib/index.js",
+    "author": "alessiodf",
+    "license": "GPL-3.0",
+    "dependencies": {
+        "delay": "^4.3.0"
+    }
+}
