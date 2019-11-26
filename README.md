@@ -29,7 +29,7 @@ After installation, make sure the `plugins.js` file is correctly configured and 
 
 The plugin will start whenever the Core or Relay process is running. To verify that it is working, open the [Universal Delegate Monitor](https://github.com/alessiodf/universal-delegate-monitor) inside the ARK Desktop Wallet, click the `Select Wallet` dropdown box, choose `Custom or Unlisted Network...` and enter your server's IP address and the configured port followed by `Connect`.
 
-If this is a new bridgechain or fork, you may choose to register it so everyone can access it via the Universal Delegate Monitor, or if it is an existing network but you would like to share your server with others so they can also connect to it to boost the decentralisation aspect of the Universal Delegate Monitor, you may choose to publish your node details. Instructions to do both of these things can be found in the [documentation](https://github.com/alessiodf/universal-delegate-monitor) for the Universal Delegate Monitor.
+If this is a new bridgechain or fork, you may choose to register it so everyone can access it via the Universal Delegate Monitor, or if it is an existing network but you would like to share your server with others so they can also connect to it to boost the decentralisation aspect of the Universal Delegate Monitor, you may choose to publish your node details. Instructions to do both of these things can be found in the [documentation](https://github.com/alessiodf/universal-delegate-monitor#readme) for the Universal Delegate Monitor.
 
 ## Configuration Options
 
