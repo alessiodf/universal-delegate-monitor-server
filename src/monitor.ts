@@ -254,7 +254,7 @@ export class Monitor {
             const delegates: Contracts.State.Wallet[] = (await this.app
                 .get<Services.Triggers.Triggers>(Container.Identifiers.TriggerService)
                 .call("getActiveDelegates", { roundInfo: rounds[i] })) as Contracts.State.Wallet[];
-            roundPublicKeys.push(delegates.map((delegate) => delegate.publicKey));
+            roundPublicKeys.push(delegates.map((delegate) => delegate.getPublicKey()));
         }
         const delegates: Array<any> = keys.map((key, index) => {
             const wallet: Contracts.State.Wallet = this.walletRepository.findByPublicKey(key);
@@ -375,7 +375,7 @@ export class Monitor {
                 .get<Services.Triggers.Triggers>(Container.Identifiers.TriggerService)
                 .call("getActiveDelegates", { roundInfo: round })) as Contracts.State.Wallet[];
             const initialSlot: number = Crypto.Slots.getSlotNumber(this.blockTimeLookup, blockData!.timestamp) + 1;
-            this.currentRound.keys = delegates.map((delegate) => delegate.publicKey);
+            this.currentRound.keys = delegates.map((delegate) => delegate.getPublicKey());
             this.currentRound.initial = {
                 order: this.currentRound.keys
                     .slice(this.currentRound.keys.indexOf(this.currentRound.keys[initialSlot % numDelegates]))
